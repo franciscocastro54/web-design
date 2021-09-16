@@ -1,0 +1,235 @@
+:root{
+    --text-color1: #10002b;
+    --text-color2: #e0aaffc4;
+    --text-color3: #240046bd;
+    --text-color4: #59189a;
+    --text-color5: #7b2cbf;
+    --text-color6: white;
+    --font-size1: 18px;
+    --font-size2:20px;
+    --font-size3: 27px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color: var(--text-color5);
+    color: var(--text-color2);
+}
+
+body > *{ 
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    height: 100px;
+    top: 0;
+    background-color: var(--text-color2);
+}
+.header *{
+    margin: -35px 0 0 0;
+}
+
+.web-logo{
+    width: 150px;
+    height: 150px;
+}
+
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    background-color: var(--text-color3);
+}
+
+.navbar *{
+    border: solid 1px transparent;
+    padding: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--text-color2);
+}
+
+.grid-content{
+    display: grid;
+    grid-template: 
+        "sidebar main" auto/
+        300px    auto;
+}
+
+.sidebar{
+    border: solid var(--text-color2) 1px;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 25px auto;
+    width: 250px; 
+    height: 25px;
+    border: 1px solid var(--text-color5); 
+    border-radius: 4px;
+}
+
+.searchLogo{
+    width: 25px;
+    height: 25px;
+    background-color: var(--text-color3);
+}
+
+.main{
+    padding: 30px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: var(--text-color3);
+    bottom: 0;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 30px auto;
+    margin: 20px 0 0 1px;
+    border-radius: 4px;
+    width: 250px;
+    border: solid var(--text-color1) 1px;
+}
+
+.card h3{
+    background-color: var(--text-color3);
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    width: 180px;
+    border-radius: 10px;
+    border: solid transparent 1px;
+    color: var(--text-color2);
+    background-color: var(--text-color4);
+    font-weight: bold;
+}
+.card a{
+    font-weight: bold;
+    padding: 40px;
+    font-size: 1.3rem;
+    color:var(--text-color2);
+    text-decoration: none;
+}
+
+.card div{
+    padding: 10px 0 10px 0; 
+}
+
+.card .photo{
+    width: 70%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card2{
+    display: grid;
+    grid-template-rows: 45px auto;
+    width: 100%;
+}
+
+.card2 h2{
+    background-color: var(--text-color4);
+    padding: 5px;
+}
+
+.card2 .input{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin: 20px 0 0 0;
+}
+
+.card2 p{
+    text-align: start;
+}
+
+.card2 .input input{
+    border-radius: 4px;
+    height: 25px;
+}
+
+#macho , #hembra{
+    height: 15px;
+    margin-top: 6px;
+}
+
+.card2 .card-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card2 .card-content-name{
+    font-size: 1.5rem;
+    margin: 60px 0 20px 0;
+    color: var(--text-color6);
+}
+
+.checkbox{
+    width: 15px;
+}
+
+.card2 button{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    height: auto;
+}
+
+.web-logo2{
+    width: 40px;
+    height: auto;
+}
+
+.card .web-logo2{
+    margin: 10px 0 0 0;
+}
+
+.card-content2{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.redes{
+    padding: 15px 0 0 0; 
+}
+
+
+@media (max-width: 1440px){
+    .card2 .card-content ,.card-content2{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .card2{
+        display: grid;
+        grid-template-rows: 45px auto;
+        width: 100%;
+        text-align: start;
+    }
+
+    #macho , #hembra{
+        height: 15px;
+        margin-top: -18px;
+    }
+
+}

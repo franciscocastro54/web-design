@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Web-Page</title>
+</head>
+<body>
+    <header class="header">
+        <img class="web-logo" src="./img/web-logo.png">
+    </header>
+    <nav class="navbar">
+        <button>Iniciar sesión</button>
+        <button>Reserva tu hora</button>
+        <button>Quienes somos?</button>
+        <button>Servicios</button>
+        <button>Ayuda</button>
+        <button>Contactanos</button>
+    </nav>
+
+    <div class="grid-content">
+        <aside class="sidebar"> 
+            <div class="search">
+                <img class="searchLogo" src="./img/search.png">
+                <input type="text" id="myInput" placeholder="Buscar...">
+            </div>
+
+            <div class="card">
+                <h3>Reserva tu hora</h3>
+                <div>
+                    <p>lun-vie 08:30-18:30</p>
+                    <p>sabado    10:30-14:30</p>
+                    <button>Reservar</button>
+                    <a href="tel:+56935232158">+569 35232158</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Clientes satisfechos</h3>
+                <div>
+                    <img class="photo" src="./img/picture1.jpg">
+                    <img class="photo" src="./img/picture2.jpg">
+                    <img class="photo" src="./img/picture3.jpg">
+                    <img class="photo" src="./img/picture4.jpg">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Redes sociales</h3>
+                <div>
+                    <img src="./img/facebook-logo.png" class="web-logo2">
+                    <p>Web-Page</p>
+
+                    <img src="./img/instagram-logo.png" class="web-logo2">
+                    <p>@Web-Page</p>
+                </div>
+            </div>
+
+        </aside>
+        <article class="main">
+            <div class="card2">
+                <h2>Registro</h2>
+
+                <div>
+                    
+                    <h4 class="card-content-name">Datos del dueño</h4>
+                    <div class="card-content">
+                        <div class="input">
+                            <p>Nombre:</p>
+                            <input type="text" placeholder="ej: Felipe">
+                        </div>
+
+                        <div class="input">
+                            <p>Apellido:</p>
+                            <input type="text" placeholder="ej: Casas">
+                        </div>
+
+                        <div class="input">
+                            <p>rut:</p>
+                            <input type="text" placeholder="ej: 12.345.678-k">
+                        </div>
+
+                        <div class="input">
+                            <p>Telefono:</p>
+                            <input type="text" placeholder="ej: +569 12345678">
+                        </div>
+
+                        <div class="input">
+                            <p>Correo electronico:</p>
+                            <input type="email" placeholder="felipe.casas@gmail.com">
+                        </div>
+
+                        <div class="input">
+                            <p>Comuna:</p>
+                            <input type="text" placeholder="Estación Central">
+                        </div>
+
+                        <div class="input">
+                            <p>Calle:</p>
+                            <input type="text" placeholder="Av. Las Torres #123">
+                        </div>
+
+                        <div class="input">
+                            <p>Casa/depto:</p>
+                            <input type="text" placeholder="Casa 33">
+                        </div>
+
+                    </div>
+
+
+                    <h4 class="card-content-name">Datos de la mascota</h4>
+                    <div class="card-content">
+
+                        <div class="input">
+                            <p>Nombre:</p>
+                            <input type="text" placeholder="ej: Firulais">
+                        </div>
+
+                        <div class="input">
+                            <p>Raza:</p>
+                            <input type="text" placeholder="ej: mestizo">
+                        </div>
+
+                        <div class="input">
+                            <p>Fecha de nacimiento:</p>
+                            <input type="date" >
+                        </div>
+
+                        <div class="input">
+                            <p>Cuidados especiales:</p>
+                            <input type="text" placeholder="ej: Toma medicamentos">
+                        </div>
+
+                        <div class="input">
+                            <p>Sexo:</p>
+                            <div class="card-content">
+                                <p for="hembra">Hembra:</p>
+                                <input id="hembra" type="radio">
+
+                                <p>Macho:</p>
+                                <input id="macho" type="radio">
+
+                            </div>
+                        </div>
+
+                        <div class="input">
+                            <p>Raza peligrosa:</p>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+
+                    </div>
+
+                    <button >Registrar</button>
+
+                    <h4 class="card-content-name">Servicios</h4>
+                    <div class="card-content2">
+
+                        <div class="input">
+                            <p>Corte de pelo:</p>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+
+                        <div class="input">
+                            <p>Corte de uñas:</p>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+
+                        <div class="input">
+                            <p>Baño:</p>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+
+                        
+
+                    </div>
+
+                    <h4 class="card-content-name">Reservar hora</h4>
+                    <div class="card-content">
+
+                        <div class="input">
+                            <p>Fecha</p>
+                            <input type="date">
+                        </div>
+
+                        <div class="input">
+                            <p>Hora:</p>
+                            <input  type="time">
+                        </div>
+
+                    </div>
+
+                    <button >Reservar hora</button>
+                    
+
+
+
+                </div>
+            </div>
+        </article>
+        
+    </div>
+
+    <footer class="footer">
+        <div>Av. SiempreViva #123, Santiago Centro, RM</div>
+        <div class="redes">       
+            <a href="mailto:francisco.castro.init@gmail.com"><img title="francisco.castro.init@gmail.com" class="web-logo2 "src="./img/gmailLogo.png"></a>
+            <a href="tel:+56935232158"><img title="+569 35232158" class="web-logo2"src="./img/wspLogo.png"></a>
+            <a href="facebook.com"><img title="Web-Page" class="web-logo2"src="./img/facebook-logo.png"></a>
+            <a href="instagram.com"><img title="@Web-Page" class="web-logo2"src="./img/instagram-logo.png"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
