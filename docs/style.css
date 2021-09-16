@@ -232,4 +232,25 @@ button{
         margin-top: -18px;
     }
 
+    .grid-content{
+        display: grid;
+        grid-template: 
+            "sidebar"auto
+            "main"   auto/
+            100%;
+    }
+    
+    .sidebar{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .sidebar #redes-sociales{
+        display: none;
+    }
+
+    .sidebar .card{
+        width: 100%;
+    }
+
 }
