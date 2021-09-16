@@ -190,8 +190,8 @@ button{
 }
 
 .card2 button{
-    font-size: 1.5rem;
-    margin-top: 50px;
+    font-size: 1.4rem;
+    margin: 50px 0 0 ;   
     height: auto;
 }
 
@@ -261,5 +261,11 @@ button{
 
     .header, .navbar{
         position: static;
+    }
+}
+
+@media (max-width: 495px){
+    .card a{
+        margin-left: -40px;
     }
 }
