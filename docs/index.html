@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="web-logo" src="./img/web-logo.png">
+        <img class="web-logo" transition-style="out:circle:center" src="./img/web-logo.png">
     </header>
     <nav class="navbar">
         <button>Iniciar sesión</button>
@@ -136,11 +136,16 @@
                         <div class="input">
                             <p>Sexo:</p>
                             <div class="card-content">
-                                <p for="hembra">Hembra:</p>
-                                <input id="hembra" type="radio">
+                        
+                                <label class="container">Macho
+                                    <input type="radio" id="macho" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
 
-                                <p>Macho:</p>
-                                <input id="macho" type="radio">
+                                <label class="container">Hembra
+                                    <input type="radio" id="hembra" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
 
                             </div>
                         </div>
