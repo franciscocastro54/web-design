@@ -125,6 +125,12 @@ button{
     background-color: var(--text-color4);
     font-weight: bold;
 }
+
+.card button:hover, .card2 button:hover{
+    color: var(--text-color4);
+    background-color: var(--text-color2);
+}
+
 .card a{
     font-weight: bold;
     padding: 40px;
@@ -215,6 +221,11 @@ button{
 
 
 @media (max-width: 1400px){
+    
+    .main{
+        padding: 30px 30px 30px 10px;
+    }
+    
     .card2 .card-content ,.card-content2{
         display: grid;
         grid-template-columns: 100%;
@@ -229,7 +240,7 @@ button{
 
     #macho , #hembra{
         height: 15px;
-        margin-top: -18px;
+        margin: -18px 0 0 100px;
     }
 
     .grid-content{
@@ -262,5 +273,6 @@ button{
     .header, .navbar{
         position: static;
     }
+
 }
 
