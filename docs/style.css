@@ -163,7 +163,7 @@ button{
 
 .card2 .input{
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 180px 180px;
     margin: 20px 0 0 0;
 }
 
@@ -231,7 +231,7 @@ input:hover{
 }
 
 
-@media (max-width: 1400px){
+@media (max-width: 1300px){
     
     .main{
         padding: 30px 30px 30px 10px;
